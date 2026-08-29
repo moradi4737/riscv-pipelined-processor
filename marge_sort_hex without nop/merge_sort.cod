@@ -1,0 +1,266 @@
+Address     Code        Basic                        Line Source
+
+0x00003000  0x3e806113  ori x2,x0,0x000003e8         16   ori     x2, x0, 1000     # sp (full descending)
+0x00003004  0x06406513  ori x10,x0,0x00000064        19                           ori     x10, x0, 100      # arr = 0x64
+0x00003008  0x00056f33  or x30,x10,x0                20                           or      x30, x10, x0      # x30 = arr
+0x0000300c  0x03a06f93  ori x31,x0,0x0000003a        23                           ori     x31, x0, 0x3A
+0x00003010  0x01ff2023  sw x31,0(x30)                24                           sw      x31, 0(x30)
+0x00003014  0x01706f93  ori x31,x0,23                27                           ori     x31, x0, 0x17
+0x00003018  0x01ff2223  sw x31,4(x30)                28                           sw      x31, 4(x30)
+0x0000301c  0x09c06f93  ori x31,x0,0x0000009c        31                           ori     x31, x0, 0x9C
+0x00003020  0x01ff2423  sw x31,8(x30)                32                           sw      x31, 8(x30)
+0x00003024  0x00506f93  ori x31,x0,5                 35                           ori     x31, x0, 0x05
+0x00003028  0x01ff2623  sw x31,12(x30)               36                           sw      x31, 12(x30)
+0x0000302c  0x0f206f93  ori x31,x0,0x000000f2        39                           ori     x31, x0, 0xF2
+0x00003030  0x01ff2823  sw x31,16(x30)               40                           sw      x31, 16(x30)
+0x00003034  0x06d06f93  ori x31,x0,0x0000006d        43                           ori     x31, x0, 0x6D
+0x00003038  0x01ff2a23  sw x31,20(x30)               44                           sw      x31, 20(x30)
+0x0000303c  0x08106f93  ori x31,x0,0x00000081        47                           ori     x31, x0, 0x81
+0x00003040  0x01ff2c23  sw x31,24(x30)               48                           sw      x31, 24(x30)
+0x00003044  0x02b06f93  ori x31,x0,0x0000002b        51                           ori     x31, x0, 0x2B
+0x00003048  0x01ff2e23  sw x31,28(x30)               52                           sw      x31, 28(x30)
+0x0000304c  0x0c706f93  ori x31,x0,0x000000c7        55                           ori     x31, x0, 0xC7
+0x00003050  0x03ff2023  sw x31,0x00000020(x30)       56                           sw      x31, 32(x30)
+0x00003054  0x04e06f93  ori x31,x0,0x0000004e        59                           ori     x31, x0, 0x4E
+0x00003058  0x03ff2223  sw x31,0x00000024(x30)       60                           sw      x31, 36(x30)
+0x0000305c  0x01006f93  ori x31,x0,16                63                           ori     x31, x0, 0x10
+0x00003060  0x03ff2423  sw x31,0x00000028(x30)       64                           sw      x31, 40(x30)
+0x00003064  0x0b306f93  ori x31,x0,0x000000b3        67                           ori     x31, x0, 0xB3
+0x00003068  0x03ff2623  sw x31,0x0000002c(x30)       68                           sw      x31, 44(x30)
+0x0000306c  0x05906f93  ori x31,x0,0x00000059        71                           ori     x31, x0, 0x59
+0x00003070  0x03ff2823  sw x31,0x00000030(x30)       72                           sw      x31, 48(x30)
+0x00003074  0x0a406f93  ori x31,x0,0x000000a4        75                           ori     x31, x0, 0xA4
+0x00003078  0x03ff2a23  sw x31,0x00000034(x30)       76                           sw      x31, 52(x30)
+0x0000307c  0x0d806f93  ori x31,x0,0x000000d8        79                           ori     x31, x0, 0xD8
+0x00003080  0x03ff2c23  sw x31,0x00000038(x30)       80                           sw      x31, 56(x30)
+0x00003084  0x02306f93  ori x31,x0,0x00000023        83                           ori     x31, x0, 0x23
+0x00003088  0x03ff2e23  sw x31,0x0000003c(x30)       84                           sw      x31, 60(x30)
+0x0000308c  0x07f06f93  ori x31,x0,0x0000007f        87                           ori     x31, x0, 0x7F
+0x00003090  0x05ff2023  sw x31,0x00000040(x30)       88                           sw      x31, 64(x30)
+0x00003094  0x00106f93  ori x31,x0,1                 91                           ori     x31, x0, 0x01
+0x00003098  0x05ff2223  sw x31,0x00000044(x30)       92                           sw      x31, 68(x30)
+0x0000309c  0x0e506f93  ori x31,x0,0x000000e5        95                           ori     x31, x0, 0xE5
+0x000030a0  0x05ff2423  sw x31,0x00000048(x30)       96                           sw      x31, 72(x30)
+0x000030a4  0x03306f93  ori x31,x0,0x00000033        99                           ori     x31, x0, 0x33
+0x000030a8  0x05ff2623  sw x31,0x0000004c(x30)       100                          sw      x31, 76(x30)
+0x000030ac  0x04806f93  ori x31,x0,0x00000048        103                          ori     x31, x0, 0x48
+0x000030b0  0x05ff2823  sw x31,0x00000050(x30)       104                          sw      x31, 80(x30)
+0x000030b4  0x09206f93  ori x31,x0,0x00000092        107                          ori     x31, x0, 0x92
+0x000030b8  0x05ff2a23  sw x31,0x00000054(x30)       108                          sw      x31, 84(x30)
+0x000030bc  0x0bc06f93  ori x31,x0,0x000000bc        111                          ori     x31, x0, 0xBC
+0x000030c0  0x05ff2c23  sw x31,0x00000058(x30)       112                          sw      x31, 88(x30)
+0x000030c4  0x06a06f93  ori x31,x0,0x0000006a        115                          ori     x31, x0, 0x6A
+0x000030c8  0x05ff2e23  sw x31,0x0000005c(x30)       116                          sw      x31, 92(x30)
+0x000030cc  0x00f06f93  ori x31,x0,15                119                          ori     x31, x0, 0x0F
+0x000030d0  0x07ff2023  sw x31,0x00000060(x30)       120                          sw      x31, 96(x30)
+0x000030d4  0x0dd06f93  ori x31,x0,0x000000dd        123                          ori     x31, x0, 0xDD
+0x000030d8  0x07ff2223  sw x31,0x00000064(x30)       124                          sw      x31, 100(x30)
+0x000030dc  0x07106f93  ori x31,x0,0x00000071        127                          ori     x31, x0, 0x71
+0x000030e0  0x07ff2423  sw x31,0x00000068(x30)       128                          sw      x31, 104(x30)
+0x000030e4  0x02e06f93  ori x31,x0,0x0000002e        131                          ori     x31, x0, 0x2E
+0x000030e8  0x07ff2623  sw x31,0x0000006c(x30)       132                          sw      x31, 108(x30)
+0x000030ec  0x05306f93  ori x31,x0,0x00000053        135                          ori     x31, x0, 0x53
+0x000030f0  0x07ff2823  sw x31,0x00000070(x30)       136                          sw      x31, 112(x30)
+0x000030f4  0x0af06f93  ori x31,x0,0x000000af        139                          ori     x31, x0, 0xAF
+0x000030f8  0x07ff2a23  sw x31,0x00000074(x30)       140                          sw      x31, 116(x30)
+0x000030fc  0x06406f93  ori x31,x0,0x00000064        143                          ori     x31, x0, 0x64
+0x00003100  0x07ff2c23  sw x31,0x00000078(x30)       144                          sw      x31, 120(x30)
+0x00003104  0x01806f93  ori x31,x0,24                147                          ori     x31, x0, 0x18
+0x00003108  0x07ff2e23  sw x31,0x0000007c(x30)       148                          sw      x31, 124(x30)
+0x0000310c  0x08c06f93  ori x31,x0,0x0000008c        151                          ori     x31, x0, 0x8C
+0x00003110  0x09ff2023  sw x31,0x00000080(x30)       152                          sw      x31, 128(x30)
+0x00003114  0x03906f93  ori x31,x0,0x00000039        155                          ori     x31, x0, 0x39
+0x00003118  0x09ff2223  sw x31,0x00000084(x30)       156                          sw      x31, 132(x30)
+0x0000311c  0x0cb06f93  ori x31,x0,0x000000cb        159                          ori     x31, x0, 0xCB
+0x00003120  0x09ff2423  sw x31,0x00000088(x30)       160                          sw      x31, 136(x30)
+0x00003124  0x00406f93  ori x31,x0,4                 163                          ori     x31, x0, 0x04
+0x00003128  0x09ff2623  sw x31,0x0000008c(x30)       164                          sw      x31, 140(x30)
+0x0000312c  0x05e06f93  ori x31,x0,0x0000005e        167                          ori     x31, x0, 0x5E
+0x00003130  0x09ff2823  sw x31,0x00000090(x30)       168                          sw      x31, 144(x30)
+0x00003134  0x0a906f93  ori x31,x0,0x000000a9        171                          ori     x31, x0, 0xA9
+0x00003138  0x09ff2a23  sw x31,0x00000094(x30)       172                          sw      x31, 148(x30)
+0x0000313c  0x0d106f93  ori x31,x0,0x000000d1        175                          ori     x31, x0, 0xD1
+0x00003140  0x09ff2c23  sw x31,0x00000098(x30)       176                          sw      x31, 152(x30)
+0x00003144  0x02706f93  ori x31,x0,0x00000027        179                          ori     x31, x0, 0x27
+0x00003148  0x09ff2e23  sw x31,0x0000009c(x30)       180                          sw      x31, 156(x30)
+0x0000314c  0x06f06f93  ori x31,x0,0x0000006f        183                          ori     x31, x0, 0x6F
+0x00003150  0x0bff2023  sw x31,0x000000a0(x30)       184                          sw      x31, 160(x30)
+0x00003154  0x01406f93  ori x31,x0,20                187                          ori     x31, x0, 0x14
+0x00003158  0x0bff2223  sw x31,0x000000a4(x30)       188                          sw      x31, 164(x30)
+0x0000315c  0x09906f93  ori x31,x0,0x00000099        191                          ori     x31, x0, 0x99
+0x00003160  0x0bff2423  sw x31,0x000000a8(x30)       192                          sw      x31, 168(x30)
+0x00003164  0x03d06f93  ori x31,x0,0x0000003d        195                          ori     x31, x0, 0x3D
+0x00003168  0x0bff2623  sw x31,0x000000ac(x30)       196                          sw      x31, 172(x30)
+0x0000316c  0x05206f93  ori x31,x0,0x00000052        199                          ori     x31, x0, 0x52
+0x00003170  0x0bff2823  sw x31,0x000000b0(x30)       200                          sw      x31, 176(x30)
+0x00003174  0x0c206f93  ori x31,x0,0x000000c2        203                          ori     x31, x0, 0xC2
+0x00003178  0x0bff2a23  sw x31,0x000000b4(x30)       204                          sw      x31, 180(x30)
+0x0000317c  0x07a06f93  ori x31,x0,0x0000007a        207                          ori     x31, x0, 0x7A
+0x00003180  0x0bff2c23  sw x31,0x000000b8(x30)       208                          sw      x31, 184(x30)
+0x00003184  0x00a06f93  ori x31,x0,10                211                          ori     x31, x0, 0x0A
+0x00003188  0x0bff2e23  sw x31,0x000000bc(x30)       212                          sw      x31, 188(x30)
+0x0000318c  0x0ef06f93  ori x31,x0,0x000000ef        215                          ori     x31, x0, 0xEF
+0x00003190  0x0dff2023  sw x31,0x000000c0(x30)       216                          sw      x31, 192(x30)
+0x00003194  0x06806f93  ori x31,x0,0x00000068        219                          ori     x31, x0, 0x68
+0x00003198  0x0dff2223  sw x31,0x000000c4(x30)       220                          sw      x31, 196(x30)
+0x0000319c  0xfff00293  addi x5,x0,0xffffffff        225  addi x5,  x0, -1      # x5  = 0xFFFFFFFF
+0x000031a0  0xfff00313  addi x6,x0,0xffffffff        226  addi x6,  x0, -1      # x6  = 0xFFFFFFFF
+0x000031a4  0xfff00393  addi x7,x0,0xffffffff        227  addi x7,  x0, -1      # x7  = 0xFFFFFFFF
+0x000031a8  0xfff00413  addi x8,x0,0xffffffff        228  addi x8,  x0, -1      # x8  = 0xFFFFFFFF
+0x000031ac  0xfff00493  addi x9,x0,0xffffffff        229  addi x9,  x0, -1      # x9  = 0xFFFFFFFF
+0x000031b0  0xfff00913  addi x18,x0,0xffffffff       231  addi x18, x0, -1      # x18 = 0xFFFFFFFF
+0x000031b4  0xfff00993  addi x19,x0,0xffffffff       232  addi x19, x0, -1      # x19 = 0xFFFFFFFF
+0x000031b8  0xfff00a13  addi x20,x0,0xffffffff       233  addi x20, x0, -1      # x20 = 0xFFFFFFFF
+0x000031bc  0xfff00f13  addi x30,x0,0xffffffff       234  addi x30, x0, -1      # x30 = 0xFFFFFFFF
+0x000031c0  0xfff00f93  addi x31,x0,0xffffffff       235  addi x31, x0, -1      # x31 = 0xFFFFFFFF
+0x000031c4  0x06406513  ori x10,x0,0x00000064        239  ori     x10, x0, 100    # arr = x10
+0x000031c8  0x00006593  ori x11,x0,0                 240  ori     x11, x0, 0      # left = x11
+0x000031cc  0x03106613  ori x12,x0,0x00000031        241  ori     x12, x0, 49      # right = x12
+0x000031d0  0x03206693  ori x13,x0,0x00000032        242  ori     x13, x0, 50      # arr_size = x13
+0x000031d4  0x150000ef  jal x1,0x00000150            243  jal     x1, merge_sort
+0x000031d8  0x2480006f  jal x0,0x00000248            245  jal     x0, finish
+0x000031dc  0xfd410113  addi x2,x2,0xffffffd4        269      addi    x2, x2, -44     # lower the stack for 11 words
+0x000031e0  0x00112023  sw x1,0(x2)                  270      sw      x1, 0(x2)       # store ra in stack
+0x000031e4  0x00512223  sw x5,4(x2)                  271      sw      x5, 4(x2)
+0x000031e8  0x00612423  sw x6,8(x2)                  272      sw      x6, 8(x2)
+0x000031ec  0x00712623  sw x7,12(x2)                 273      sw      x7, 12(x2)
+0x000031f0  0x00812823  sw x8,16(x2)                 274      sw      x8, 16(x2)
+0x000031f4  0x00912a23  sw x9,20(x2)                 275      sw      x9, 20(x2)
+0x000031f8  0x01212c23  sw x18,24(x2)                276      sw      x18, 24(x2)
+0x000031fc  0x01312e23  sw x19,28(x2)                277      sw      x19, 28(x2)
+0x00003200  0x03412023  sw x20,0x00000020(x2)        278      sw      x20, 32(x2)
+0x00003204  0x03e12223  sw x30,0x00000024(x2)        279      sw      x30, 36(x2)
+0x00003208  0x03f12423  sw x31,0x00000028(x2)        280      sw      x31, 40(x2)
+0x0000320c  0x00271f93  slli x31,x14,2               283      slli    x31, x14, 2     # x31 = x14 << 2
+0x00003210  0x01f50933  add x18,x10,x31              284      add     x18, x10, x31   # x18 = x10 + x31
+0x00003214  0x00160293  addi x5,x12,1                287      addi    x5, x12, 1      # x5 = x12 + 1
+0x00003218  0x00229293  slli x5,x5,2                 288      slli    x5, x5, 2       # x5 = x5 << 2
+0x0000321c  0x00168313  addi x6,x13,1                291      addi    x6, x13, 1      # x6 = x13 + 1
+0x00003220  0x00231313  slli x6,x6,2                 292      slli    x6, x6, 2       # x6 = x6 << 2
+0x00003224  0x00259393  slli x7,x11,2                297      slli    x7, x11, 2
+0x00003228  0x00638e63  beq x7,x6,0x0000001c         300          beq   x7, x6, done_move_loop
+0x0000322c  0x00750f33  add x30,x10,x7               302          add   x30, x10, x7       # x30 = arr + i
+0x00003230  0x000f2f83  lw x31,0(x30)                303          lw    x31, 0(x30)        # x31 = [arr + i]
+0x00003234  0x00790f33  add x30,x18,x7               305          add   x30, x18, x7       # x30 = arr2 + i
+0x00003238  0x01ff2023  sw x31,0(x30)                306          sw    x31, 0(x30)        # [arr2 + i] = x31
+0x0000323c  0x00438393  addi x7,x7,4                 308          addi  x7, x7, 4          # x7 = x7 + 4
+0x00003240  0xfe9ff06f  jal x0,0xffffffe8            309          jal   x0, move_loop
+0x00003244  0x00b063b3  or x7,x0,x11                 314      or      x7, x0, x11     # x7 = x11
+0x00003248  0x00239393  slli x7,x7,2                 315      slli    x7, x7, 2       # x7 = x7 << 2
+0x0000324c  0x00c06433  or x8,x0,x12                 317      or      x8, x0, x12     # x8 = x12
+0x00003250  0x00140413  addi x8,x8,1                 318      addi    x8, x8, 1       # x8 = x8 + 1
+0x00003254  0x00241413  slli x8,x8,2                 319      slli    x8, x8, 2       # x8 = x8 << 2
+0x00003258  0x00b064b3  or x9,x0,x11                 321      or      x9, x0, x11     # x9 = x11
+0x0000325c  0x00249493  slli x9,x9,2                 322      slli    x9, x9, 2       # x9 = x9 << 2
+0x00003260  0x00790fb3  add x31,x18,x7               326          add     x31, x18, x7    # x31 = arr2 + i
+0x00003264  0x000fa983  lw x19,0(x31)                327          lw      x19, 0(x31)     # x19 = [x31]
+0x00003268  0x00890fb3  add x31,x18,x8               329          add     x31, x18, x8    # x31 = arr2 + j
+0x0000326c  0x000faa03  lw x20,0(x31)                330          lw      x20, 0(x31)     # x20 = [x31]
+0x00003270  0x0053afb3  slt x31,x7,x5                332          slt     x31, x7, x5     # x31 = x7 < x5
+0x00003274  0x00642f33  slt x30,x8,x6                333          slt     x30, x8, x6     # x30 = x8 < x6
+0x00003278  0x01ff7fb3  and x31,x30,x31              334          and     x31, x30, x31   # x31 = x30 & x31
+0x0000327c  0x020f8663  beq x31,x0,0x0000002c        335          beq     x31, x0, done_loop1 # branch to "done_loop1", if x31==0
+0x00003280  0x00950fb3  add x31,x10,x9               336          add     x31, x10, x9    # x31 = arr + k
+0x00003284  0x0149af33  slt x30,x19,x20              338          slt     x30, x19, x20   # x30 = x19 < x20
+0x00003288  0x000f0863  beq x30,x0,0x00000010        339          beq     x30, x0, choose_right
+0x0000328c  0x013fa023  sw x19,0(x31)                341              sw      x19, 0(x31)
+0x00003290  0x00438393  addi x7,x7,4                 343              addi    x7, x7, 4
+0x00003294  0x00c0006f  jal x0,0x0000000c            344              jal     x0, done
+0x00003298  0x014fa023  sw x20,0(x31)                347              sw      x20, 0(x31)
+0x0000329c  0x00440413  addi x8,x8,4                 349              addi    x8, x8, 4
+0x000032a0  0x00448493  addi x9,x9,4                 352          addi    x9, x9, 4
+0x000032a4  0xfbdff06f  jal x0,0xffffffbc            353          jal     x0, loop1
+0x000032a8  0x0053af33  slt x30,x7,x5                366          slt   x30, x7, x5        # x30 = (x7 < x5) ? 1 : 0
+0x000032ac  0x020f0063  beq x30,x0,0x00000020        367          beq   x30, x0, done_L    # if (x30 == 0) ? i >= x5 ? exit loop
+0x000032b0  0x00790f33  add x30,x18,x7               369          add   x30, x18, x7       # x30 = x18 + x7
+0x000032b4  0x000f2f83  lw x31,0(x30)                370          lw    x31, 0(x30)        # x31 = [x30]
+0x000032b8  0x00950f33  add x30,x10,x9               372          add   x30, x10, x9       # x30 = x10 + x9
+0x000032bc  0x01ff2023  sw x31,0(x30)                373          sw    x31, 0(x30)        # [x30] = x31
+0x000032c0  0x00438393  addi x7,x7,4                 375          addi  x7, x7, 4          # x7 = x7 + 4
+0x000032c4  0x00448493  addi x9,x9,4                 377          addi  x9, x9, 4          # x9 = x9 + 4
+0x000032c8  0xfe1ff06f  jal x0,0xffffffe0            380          jal   x0, loop_L
+0x000032cc  0x00642f33  slt x30,x8,x6                394          slt   x30, x8, x6        # x30 = (j < x6) ? 1 : 0
+0x000032d0  0x020f0063  beq x30,x0,0x00000020        395          beq   x30, x0, done_R    # if (x30 == 0) ? j >= x6 ? exit loop
+0x000032d4  0x00890f33  add x30,x18,x8               397          add   x30, x18, x8       # x30 = x18 + x8
+0x000032d8  0x000f2f83  lw x31,0(x30)                398          lw    x31, 0(x30)        # x31 = [x30]
+0x000032dc  0x00950f33  add x30,x10,x9               400          add   x30, x10, x9       # x30 = x10 + x9
+0x000032e0  0x01ff2023  sw x31,0(x30)                401          sw    x31, 0(x30)        # [x30] = x31
+0x000032e4  0x00440413  addi x8,x8,4                 403          addi  x8, x8, 4          # x8 = x8 + 4
+0x000032e8  0x00448493  addi x9,x9,4                 405          addi  x9, x9, 4          # x9 = x9 + 4
+0x000032ec  0xfe1ff06f  jal x0,0xffffffe0            407          jal   x0, loop_R
+0x000032f0  0x00012083  lw x1,0(x2)                  412      lw      x1, 0(x2)       # store ra in stack
+0x000032f4  0x00412283  lw x5,4(x2)                  413      lw      x5, 4(x2)
+0x000032f8  0x00812303  lw x6,8(x2)                  414      lw      x6, 8(x2)
+0x000032fc  0x00c12383  lw x7,12(x2)                 415      lw      x7, 12(x2)
+0x00003300  0x01012403  lw x8,16(x2)                 416      lw      x8, 16(x2)
+0x00003304  0x01412483  lw x9,20(x2)                 417      lw      x9, 20(x2)
+0x00003308  0x01812903  lw x18,24(x2)                418      lw      x18, 24(x2)
+0x0000330c  0x01c12983  lw x19,28(x2)                419      lw      x19, 28(x2)
+0x00003310  0x02012a03  lw x20,0x00000020(x2)        420      lw      x20, 32(x2)
+0x00003314  0x02412f03  lw x30,0x00000024(x2)        421      lw      x30, 36(x2)
+0x00003318  0x02812f83  lw x31,0x00000028(x2)        422      lw      x31, 40(x2)
+0x0000331c  0x02c10113  addi x2,x2,0x0000002c        423      addi    x2, x2, 44     # get the stack back to its first state
+0x00003320  0x00008067  jalr x0,x1,0                 425      jalr x0, x1, 0
+0x00003324  0xfec10113  addi x2,x2,0xffffffec        439      addi    x2, x2, -20     # lower the stack for 5 words
+0x00003328  0x00112023  sw x1,0(x2)                  440      sw      x1, 0(x2)       # store ra in stack
+0x0000332c  0x00512223  sw x5,4(x2)                  441      sw      x5, 4(x2)
+0x00003330  0x00e12423  sw x14,8(x2)                 442      sw      x14, 8(x2)
+0x00003334  0x01e12623  sw x30,12(x2)                443      sw      x30, 12(x2)
+0x00003338  0x01f12823  sw x31,16(x2)                444      sw      x31, 16(x2)
+0x0000333c  0x00c5afb3  slt x31,x11,x12              448      slt     x31, x11, x12               # x31 = (left < right) ? 1 : 0
+0x00003340  0x0c0f8263  beq x31,x0,0x000000c4        449      beq     x31, x0, end_merge_sort     # if NOT (left < right) ? left >= right ? branch
+0x00003344  0x40b60f33  sub x30,x12,x11              451      sub     x30, x12, x11    # x30 = right - left
+0x00003348  0x00000f93  addi x31,x0,0                453      addi  x31, x0, 0        # x31 = half = 0
+0x0000334c  0x00200293  addi x5,x0,2                 454      addi  x5,  x0, 2        # x5 = constant 2
+0x00003350  0x005f23b3  slt x7,x30,x5                457      slt   x7, x30, x5       # x7 = 1 if diff < 2
+0x00003354  0x00038463  beq x7,x0,0x00000008         458      beq   x7, x0, do_step   # if diff >= 2 continue
+0x00003358  0x0100006f  jal x0,0x00000010            459      jal   x0, finish_div    # else exit loop
+0x0000335c  0xffef0f13  addi x30,x30,0xfffffffe      462      addi  x30, x30, -2      # diff -= 2
+0x00003360  0x001f8f93  addi x31,x31,1               463      addi  x31, x31, 1       # half++
+0x00003364  0xfedff06f  jal x0,0xffffffec            464      jal   x0, divide_loop
+0x00003368  0x01f582b3  add x5,x11,x31               467      add     x5,  x11, x31    # x5  = left + (right - left)/2  => mid
+0x0000336c  0xff010113  addi x2,x2,0xfffffff0        472      addi    x2, x2, -16
+0x00003370  0x00a12023  sw x10,0(x2)                 473      sw      x10, 0(x2)
+0x00003374  0x00b12223  sw x11,4(x2)                 474      sw      x11, 4(x2)
+0x00003378  0x00c12423  sw x12,8(x2)                 475      sw      x12, 8(x2)
+0x0000337c  0x00d12623  sw x13,12(x2)                476      sw      x13, 12(x2)
+0x00003380  0x0002e633  or x12,x5,x0                 478      or      x12, x5, x0
+0x00003384  0xfa1ff0ef  jal x1,0xffffffa0            479      jal     x1, merge_sort
+0x00003388  0x00012503  lw x10,0(x2)                 481      lw      x10, 0(x2)
+0x0000338c  0x00412583  lw x11,4(x2)                 482      lw      x11, 4(x2)
+0x00003390  0x00812603  lw x12,8(x2)                 483      lw      x12, 8(x2)
+0x00003394  0x00c12683  lw x13,12(x2)                484      lw      x13, 12(x2)
+0x00003398  0x01010113  addi x2,x2,16                485      addi    x2, x2, 16
+0x0000339c  0xff010113  addi x2,x2,0xfffffff0        489      addi    x2, x2, -16
+0x000033a0  0x00a12023  sw x10,0(x2)                 490      sw      x10, 0(x2)
+0x000033a4  0x00b12223  sw x11,4(x2)                 491      sw      x11, 4(x2)
+0x000033a8  0x00c12423  sw x12,8(x2)                 492      sw      x12, 8(x2)
+0x000033ac  0x00d12623  sw x13,12(x2)                493      sw      x13, 12(x2)
+0x000033b0  0x00128593  addi x11,x5,1                495      addi    x11, x5, 1
+0x000033b4  0xf71ff0ef  jal x1,0xffffff70            496      jal     x1, merge_sort
+0x000033b8  0x00012503  lw x10,0(x2)                 498      lw      x10, 0(x2)
+0x000033bc  0x00412583  lw x11,4(x2)                 499      lw      x11, 4(x2)
+0x000033c0  0x00812603  lw x12,8(x2)                 500      lw      x12, 8(x2)
+0x000033c4  0x00c12683  lw x13,12(x2)                501      lw      x13, 12(x2)
+0x000033c8  0x01010113  addi x2,x2,16                502      addi    x2, x2, 16
+0x000033cc  0xff010113  addi x2,x2,0xfffffff0        509      addi    x2, x2, -16
+0x000033d0  0x00a12023  sw x10,0(x2)                 510      sw      x10, 0(x2)
+0x000033d4  0x00b12223  sw x11,4(x2)                 511      sw      x11, 4(x2)
+0x000033d8  0x00c12423  sw x12,8(x2)                 512      sw      x12, 8(x2)
+0x000033dc  0x00d12623  sw x13,12(x2)                513      sw      x13, 12(x2)
+0x000033e0  0x00d06733  or x14,x0,x13                515      or      x14, x0, x13    # arr_size = x14
+0x000033e4  0x00c066b3  or x13,x0,x12                516      or      x13, x0, x12    # right = x13
+0x000033e8  0x00506633  or x12,x0,x5                 517      or      x12, x0, x5     # mid = x12
+0x000033ec  0xdf1ff0ef  jal x1,0xfffffdf0            518      jal     x1, merge
+0x000033f0  0x00012503  lw x10,0(x2)                 520      lw      x10, 0(x2)
+0x000033f4  0x00412583  lw x11,4(x2)                 521      lw      x11, 4(x2)
+0x000033f8  0x00812603  lw x12,8(x2)                 522      lw      x12, 8(x2)
+0x000033fc  0x00c12683  lw x13,12(x2)                523      lw      x13, 12(x2)
+0x00003400  0x01010113  addi x2,x2,16                524      addi    x2, x2, 16
+0x00003404  0x00012083  lw x1,0(x2)                  531      lw      x1, 0(x2)       # store ra in stack
+0x00003408  0x00412283  lw x5,4(x2)                  532      lw      x5, 4(x2)
+0x0000340c  0x00812703  lw x14,8(x2)                 533      lw      x14, 8(x2)
+0x00003410  0x00c12f03  lw x30,12(x2)                534      lw      x30, 12(x2)
+0x00003414  0x01012f83  lw x31,16(x2)                535      lw      x31, 16(x2)
+0x00003418  0x01410113  addi x2,x2,20                536      addi    x2, x2, 20     # get the stack back to its first state
+0x0000341c  0x00008067  jalr x0,x1,0                 538      jalr x0, x1, 0

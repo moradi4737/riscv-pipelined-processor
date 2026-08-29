@@ -1,0 +1,43 @@
+file.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <_start>:
+   0:	00000013          	nop
+   4:	00500293          	li	t0,5
+   8:	00600313          	li	t1,6
+   c:	00536133          	or	sp,t1,t0
+  10:	00510133          	add	sp,sp,t0
+  14:	00010513          	mv	a0,sp
+  18:	00300593          	li	a1,3
+  1c:	10000a13          	li	s4,256
+
+0000000000000020 :
+  20:	005501b3          	add	gp,a0,t0
+  24:	006191b3          	sll	gp,gp,t1
+  28:	003a2023          	sw	gp,0(s4)
+  2c:	000a2203          	lw	tp,0(s4)
+  30:	00020513          	mv	a0,tp
+  34:	fff58593          	addi	a1,a1,-1
+  38:	fe0594e3          	bnez	a1,20 
+  3c:	00050193          	mv	gp,a0
+  40:	00c000ef          	jal	ra,4c 
+  44:	00018513          	mv	a0,gp
+
+0000000000000048 :
+  48:	00000063          	beqz	zero,48 
+
+000000000000004c :
+  4c:	00218193          	addi	gp,gp,2
+  50:	00008067          	ret
+
+Disassembly of section .heap:
+
+0000000000010000 <_sheap>:
+	...
+
+Disassembly of section .stack:
+
+0000000000010200 <_estack>:
+	...
